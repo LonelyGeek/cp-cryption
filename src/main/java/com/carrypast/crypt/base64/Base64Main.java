@@ -35,6 +35,9 @@ public class Base64Main {
         byte[] encodeBytes = Base64.encodeBase64(SOURCE_STR.getBytes());
         System.out.println("encode:" + new String(encodeBytes));
 
+        System.out.println("encode2:" + Base64.encodeBase64String(SOURCE_STR.getBytes()));
+
+
         byte[] decodeBytes = Base64.decodeBase64(encodeBytes);
         System.out.println("decode" + new String(decodeBytes));
     }
